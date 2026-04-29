@@ -5,6 +5,7 @@ import { Page } from 'playwright-core';
 type MyFixtures = {
   loginPage: Pages.LoginPage;
   inventoryPage: Pages.InventoryPage;
+  itemPage: Pages.ItemPage;
 };
 
 const createTestFunction =
@@ -18,4 +19,5 @@ const createTestFunction =
 export const test = base.extend<MyFixtures>({
   loginPage: createTestFunction(Pages.LoginPage),
   inventoryPage: createTestFunction(Pages.InventoryPage),
+  itemPage: createTestFunction(Pages.ItemPage),
 });

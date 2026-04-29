@@ -16,6 +16,11 @@ export class LoginPage extends BasePage {
   }
 
   async navigate() {
+    await this.page.goto('/');
+    await this.page.title();
+  }
+
+  async navigateLoged() {
     await this.page.goto('/inventory.html');
     await this.page.title();
   }
