@@ -16,7 +16,7 @@ export class LoginPage extends BasePage {
   }
 
   async navigate() {
-    await this.page.goto('/');
+    await this.page.goto('/inventory.html');
     await this.page.title();
   }
 
@@ -28,10 +28,6 @@ export class LoginPage extends BasePage {
     await this.passwordBox.fill(password);
     await this.loginBtn.click();
     console.log(`Logging in with username: ${username}`);
-  }
-
-  async saveSession(filePath: string = 'session.json') {
-    await this.page.context().storageState({ path: filePath });
   }
 
   async validate() {

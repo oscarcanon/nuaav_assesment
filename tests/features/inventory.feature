@@ -7,8 +7,6 @@ Feature: Inventory Page Module
   @smoke
   @positive
   Scenario: View inventory items
-   Given I am on the login page
-    When I log with "standard_user" as user and "secret_sauce" as password
     Given I am on the inventory page
     When I view the inventory
-    #Then I should see a list of available products
+    Then I should see a list of available products

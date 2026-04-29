@@ -6,8 +6,8 @@ Feature: Login Page Module
   # POSITIVE SCENARIOS
   @smoke
   @positive
+  @login
   Scenario: Successful login with valid credentials (standard_user)
     Given I am on the login page
-    When I log with "standard_user" as user and "secret_sauce" as password
     Then I should be redirected to the inventory page
     And I should see a welcome message with standard_user

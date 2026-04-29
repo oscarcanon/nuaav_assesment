@@ -43,6 +43,12 @@ npx playwright test -g @smoke --project chromium
 npx playwright test --project webkit -g @smoke
 ```
 
+### Number of workers
+
+```bash
+npx playwright test --workers=2
+```
+
 ## Report
 
 ```bash
