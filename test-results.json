@@ -1,0 +1,215 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\oscar.canonc\\repo\\nuaav_assesment\\playwright.config.ts",
+    "rootDir": "C:/Users/oscar.canonc/repo/nuaav_assesment/.features-gen",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/oscar.canonc/repo/nuaav_assesment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/oscar.canonc/repo/nuaav_assesment/.features-gen",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/oscar.canonc/repo/nuaav_assesment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/oscar.canonc/repo/nuaav_assesment/.features-gen",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      ["list", null],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\features\\login.feature.spec.js",
+      "file": "tests/features/login.feature.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page Module",
+          "file": "tests/features/login.feature.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Successful login with valid credentials (standard_user)",
+              "ok": true,
+              "tags": ["smoke", "positive"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2493,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Logging in with username: standard_user\n"
+                        },
+                        {
+                          "text": "Validating welcome message for standard_user\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given I am on the login page",
+                          "duration": 1300
+                        },
+                        {
+                          "title": "When I log with \"standard_user\" as user and \"secret_sauce\" as password",
+                          "duration": 311
+                        },
+                        {
+                          "title": "Then I should be redirected to the inventory page",
+                          "duration": 33
+                        },
+                        {
+                          "title": "And I should see a welcome message with standard_user",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2026-04-28T22:39:51.855Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d072502f32e4ac34ed4c-542efc43e55b302ad879",
+              "file": "tests/features/login.feature.spec.js",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "Successful login with valid credentials (standard_user)",
+              "ok": true,
+              "tags": ["smoke", "positive"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4924,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Logging in with username: standard_user\n"
+                        },
+                        {
+                          "text": "Validating welcome message for standard_user\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given I am on the login page",
+                          "duration": 884
+                        },
+                        {
+                          "title": "When I log with \"standard_user\" as user and \"secret_sauce\" as password",
+                          "duration": 723
+                        },
+                        {
+                          "title": "Then I should be redirected to the inventory page",
+                          "duration": 64
+                        },
+                        {
+                          "title": "And I should see a welcome message with standard_user",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2026-04-28T22:39:52.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d072502f32e4ac34ed4c-a18e42c3f0b1e9b0b3c7",
+              "file": "tests/features/login.feature.spec.js",
+              "line": 6,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-28T22:39:49.872Z",
+    "duration": 17305.265,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
