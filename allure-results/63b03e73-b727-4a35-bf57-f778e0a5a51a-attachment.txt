@@ -1,2 +1,0 @@
-Logging in with username: standard_user
-Validating welcome message for standard_user

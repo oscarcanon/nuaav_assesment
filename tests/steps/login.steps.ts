@@ -4,9 +4,6 @@ import { test } from '../fixtures/fixtures';
 
 const { Given, When, Then } = createBdd(test);
 
-//import { Given, When, Then } from "../fixtures/fixtures";
-//import { test } from "../fixtures/fixtures";
-
 //Preconditions
 Given('I am on the login page', async ({ loginPage }) => {
   await loginPage.navigate();
